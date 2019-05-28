@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import './App.css'
 
 import Price from './ui/Price'
-// import priceInfo from './ui/priceInfo';
-
+import PriceInfo from './ui/PriceInfo'
 
 export class App extends Component {
 
   state={
     month:undefined,
-    year:undefined
+    year:undefined,
+    price:undefined
   }
 
 getPrice = async(e)=>{
@@ -25,13 +25,15 @@ getPrice = async(e)=>{
   if(month && year){
     this.setState({
       month:data.month,
-      year:data.year
+      year:data.year,
+      price:data.price
     })
   
   }else{
     this.setState({
-      month:'',
-      year:''
+      month:undefined,
+      year:undefined,
+      price:undefined
     })
   }
 
@@ -42,10 +44,12 @@ getPrice = async(e)=>{
   render() {
     return (
       <div>
-        {/* <Price/> */}
           <Price getPrice = {this.getPrice} />   
-          <priceInfo month= {this.state.month}
-                     year = {this.state.year}/>
+          <PriceInfo  month= {this.state.month}
+                      year = {this.state.year}
+                      price = {this.state.price}
+            /> 
+            
       </div>
     )
 

@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-const priceInfo = props => (
+const PriceInfo = props => (
     <div className='price_info'>
         {
             props.month && <p>Month:
@@ -13,7 +13,14 @@ const priceInfo = props => (
             </p>
             
         }
+          {
+            props.price && <p>Price:
+                {props.price}
+            </p>
+            
+        }
+
     </div>
 )
 
-export default priceInfo
+export default PriceInfo
