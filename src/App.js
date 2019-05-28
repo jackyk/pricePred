@@ -21,6 +21,7 @@ getPrice = async(e)=>{
 
   const apiCall = await fetch(`https://yfarmapi.herokuapp.com/price/v1?month=${month}&year=${year}`)
   const data = await apiCall.json()
+  console.log(data)
   if(month && year){
     this.setState({
       month:data.month,
