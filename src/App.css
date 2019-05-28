@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
 html, body {
   background: url('https://images.unsplash.com/uploads/1413595244012e81f5c69/de0cc225?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b019868c314903110f248b3a5cbd36e4&auto=format&fit=crop&w=1050&q=80') center center no-repeat;
   background-size: cover;
@@ -6,20 +11,6 @@ html, body {
   width: 100%;
 }
 
-
-.container{
-  text-align: left;
-  padding: 3em;
-  margin: 3em;
-  border: 2px solid #d3d3d3;
-  border-radius: .5em;
-  align-content: center;
-  margin-left:auto;
-  margin-right:auto;
-  /* width: 100%; */
-  height: auto;
-  background-color: #fff;
-}
 h1{
   text-align: center;
   text-transform: uppercase;
@@ -35,7 +26,7 @@ label {
   margin:10px;
 }
 .finalPrice, .month, .year {
-  width: 40%;
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -44,26 +35,8 @@ label {
   box-sizing: border-box;
 }
 
-.date {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 18px 0 ;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-select {
-  width: 20%;
-  padding: 12px 20px;
-  margin: 18px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 input[type= submit]{
-  width: 10%;
+  /* width: 10%; */
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -72,4 +45,24 @@ input[type= submit]{
   border-radius: 4px;
   cursor: pointer;
 }
-  
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #4CAF50;
+  width: 20%;
+  padding-bottom: 4px;
+  color: #fff !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.price_info{
+  width:60%;
+  font-size: 20px;
+  font-weight:200px;
+  letter-spacing: 2px;
+  margin-left:4.5vw;
+}
